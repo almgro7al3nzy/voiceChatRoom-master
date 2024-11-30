@@ -2,22 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Vite App</title>
+    <title>Voice Chat Rooms</title>
   </head>
   <body>
     <div id="container">
-      <div id="room-header">
+      <!-- هيدر الغرفة -->
+      <div id="room-header" style="display: none;">
         <h1 id="room-name"></h1>
-
         <div id="room-header-controls">
           <img id="mic-icon" class="control-icon" src="icons/mic-off.svg" />
           <img id="leave-icon" class="control-icon" src="icons/leave.svg" />
         </div>
       </div>
 
+      <!-- نموذج الانضمام إلى الغرفة -->
       <form id="form">
         <div>
           <h3>Select an avatar:</h3>
@@ -53,11 +53,15 @@
 
           <input type="submit" value="Enter Room" />
         </div>
+
+        <!-- مكان لعرض رسائل التنبيه -->
+        <div id="alert-box" style="color: red; margin-top: 10px;"></div>
       </form>
 
+      <!-- قائمة الأعضاء في الغرفة -->
       <div id="members"></div>
     </div>
+
     <script type="module" src="main.js"></script>
-    <!-- <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script> -->
   </body>
 </html>
