@@ -4,13 +4,16 @@ import AgoraRTC from "agora-rtc-sdk-ng";
 import AgoraRTM from "agora-rtm-sdk";
 
 // تهيئة Firebase
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDitjQHOczhoSqfKdovHYg9GHA87rng86w",
+  authDomain: "devf5r-dmin.firebaseapp.com",
+  databaseURL: "https://devf5r-dmin-default-rtdb.firebaseio.com",
+  projectId: "devf5r-dmin",
+  storageBucket: "devf5r-dmin.appspot.com",
+  messagingSenderId: "689450518141",
+  appId: "1:689450518141:web:9c3f9217d06f8980079314",
+  measurementId: "G-L2MFTD6WPQ"
 };
 
 if (!firebase.apps.length) {
